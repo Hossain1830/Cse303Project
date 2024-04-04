@@ -1,20 +1,194 @@
-*{
-    front-family: sans-serif;
+* {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;   
+    box-sizing: border-box;
 }
-body{
+
+/* Main Styles */
+body {
     min-height: 100vh;
-    background: linear-gradient();
+    background-color: #f2f2f2; 
+    background-image: url("background.image.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, sans-serif; 
 }
-form{
-    background: #989898ce;
-    width:  350px;
+
+/* Navigation Styles */
+.navbar {
+    background: crimson;
+    font-family: calibri;
+    padding: 15px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+.navdiv ul {
+    list-style: none;
+    display: flex;
+}
+
+.navdiv ul li {
+    margin-right: 25px;
+}
+
+.navdiv ul li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navdiv ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+form {
+    background: rgba(152, 152, 152, 0.81);
+    width: 350px;
     height: 280px;
-    padding: 75px 50px;
+    padding: 20px;
     position: absolute;
-    left: 50%;
+    left: calc(50% + 250px); 
     top: 50%;
+    transform: translate(-50%, -50%); 
+    border-radius: 10px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 1px solid crimson;
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: darkred;
+}
+
+/* About Us */
+.form-description {
+    position: absolute;
+    right: 50px;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 800px;
+    padding: 100px;
+    background-color: #beefe1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-description p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Services Section */
+.services {
+    position: absolute;
+    right: 50px;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 800px;
+    padding: 100px;
+    background-color: #beefe1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.services h2 {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.services ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.services li {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Contact Info*/
+.contact-info {
+    margin: 20px; 
+    width: 300px;
+}
+
+.info-box {
+    background-color: #bcec5c;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-box p {
+    margin-bottom: 10px;
+}
+
+.info-box strong {
+    font-weight: bold;
+}
+
+.contact-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }

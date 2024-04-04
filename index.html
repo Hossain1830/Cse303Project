@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Login</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <form>
-            <h1>Login</h1>
-            <div>
-                <input type="text" placeholder="Username">
-            </div>
-            <div>
-                <input type="password" placeholder="password">
-            </div>
-            <input type="submit" value="Login">
-            <div>
-                Don't have an account?
-            </br>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="index.html">Welcome</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <form>
+        <h1>Login</h1>
+        <div class="input-container">
+            <input type="text" placeholder="Username" class="input-field">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="input-container">
+            <input type="password" placeholder="Password" class="input-field">
+            <i class="fas fa-lock"></i>
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+        <div>
+            Don't have an account?<br>
             <a href="#">Sign up</a>
-            </div>
-        </form>
-    </body>
+        </div>
+    </form>  
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
 </html>
