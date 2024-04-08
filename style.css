@@ -59,13 +59,11 @@ body {
 form {
     background: rgba(152, 152, 152, 0.81);
     width: 350px;
-    height: 280px;
     padding: 20px;
-    position: absolute;
-    left: calc(50% + 250px); 
-    top: 50%;
-    transform: translate(-50%, -50%); 
     border-radius: 10px;
+    margin: auto; 
+    margin-top: 50px;
+    margin-right: 90px;
 }
 
 .input-container {
@@ -74,7 +72,7 @@ form {
 }
 
 .input-field {
-    width: 100%;
+    width: calc(100% - 22px); /* Adjusting width to accommodate padding and border */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;

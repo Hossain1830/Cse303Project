@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="index.html">Welcome</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <form action="connect.php" method="post">
+        <h1>Sign Up</h1>
+        <div class="input-container">
+            <label for="role">Select Role:</label><br>
+            <input type="radio" id="doctor" name="role" value="doctor">
+            <label for="doctor">Doctor</label><br>
+            <input type="radio" id="patient" name="role" value="patient">
+            <label for="patient">Patient</label><br>
+        </div>
+        <div class="input-container" id="doctorFields" style="display:none;">
+            <input type="text" placeholder="Name" class="input-field" name="name"><br>
+            <input type="text" placeholder="Specialist" class="input-field" name="specialist"><br>
+            <input type="text" placeholder="Phone Number" class="input-field" name="phone_number"><br>
+        </div>
+        <div class="input-container" id="patientFields" style="display:none;">
+            <input type="text" placeholder="Name" class="input-field" name="name"><br>
+            <input type="text" placeholder="Gender" class="input-field" name="gender"><br>
+            <input type="text" placeholder="Disease" class="input-field" name="disease"><br>
+            <input type="text" placeholder="Age" class="input-field" name="age"><br>
+            <input type="text" placeholder="Phone Number" class="input-field" name="phone number"><br>
+        </div>
+        <button type="submit" class="login-btn">Sign Up</button>
+        <div>
+            Already have an account? <a href="index.html">Login</a> 
+        </div>
+    </form>  
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        document.getElementById('doctor').addEventListener('change', function() {
+            if(this.checked) {
+                document.getElementById('doctorFields').style.display = 'block';
+                document.getElementById('patientFields').style.display = 'none';
+            }
+        });
+
+        document.getElementById('patient').addEventListener('change', function() {
+            if(this.checked) {
+                document.getElementById('patientFields').style.display = 'block';
+                document.getElementById('doctorFields').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
