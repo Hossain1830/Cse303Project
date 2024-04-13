@@ -15,7 +15,7 @@
             </ul>
         </div>
     </nav>
-    <form action="connect.php" method="post">
+    <form action="connect.php" method="post"> <!-- Form submits data to connect.php -->
         <h1>Sign Up</h1>
         <div class="input-container">
             <label for="role">Select Role:</label><br>
@@ -25,20 +25,19 @@
             <label for="patient">Patient</label><br>
         </div>
         <div class="input-container" id="doctorFields" style="display:none;">
-            <input type="text" placeholder="Name" class="input-field" name="name"><br>
+            <input type="text" placeholder="Name" class="input-field" name="dname"><br>
             <input type="text" placeholder="Specialist" class="input-field" name="specialist"><br>
-            <input type="text" placeholder="Phone Number" class="input-field" name="phone_number"><br>
+            <input type="text" placeholder="Phone Number" class="input-field" name="phone_number"><br> <!-- Changed name attribute -->
         </div>
         <div class="input-container" id="patientFields" style="display:none;">
             <input type="text" placeholder="Name" class="input-field" name="name"><br>
             <input type="text" placeholder="Gender" class="input-field" name="gender"><br>
             <input type="text" placeholder="Disease" class="input-field" name="disease"><br>
             <input type="text" placeholder="Age" class="input-field" name="age"><br>
-            <input type="text" placeholder="Phone Number" class="input-field" name="phone number"><br>
         </div>
         <button type="submit" class="login-btn">Sign Up</button>
         <div>
-            Already have an account? <a href="index.html">Login</a> 
+            Already have an account? <a href="index.html">Login</a>
         </div>
     </form>  
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
